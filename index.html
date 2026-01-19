@@ -11,124 +11,216 @@
 
 <!-- ================= NAVBAR ================= -->
 <header class="navbar">
-  <div class="logo">TechWave</div>
+  <div class="logo">
+  Tech<span class="gradient-text">Wave</span>
+</div>
+</div>
 
   <nav class="nav-links">
-    <a href="#">About</a>
-    <a href="#">Episodes</a>
-    <a href="#">Host</a>
+    <a href="#about">About</a>
+    <a href="#episodes">Episodes</a>
+    <a href="#host">Host</a>
   </nav>
 
-  <button class="subscribe-btn">Subscribe</button>
+  <button class="subscribe-btn-1">
+    Subscribe <img src="assets/ArrowRight - Copy.png" alt="">
+  </button>
 
   <img src="assets/hamburger-menu.png" class="hamburger" alt="Menu">
 </header>
+
 
 <!-- ================= HERO ================= -->
 <section class="hero">
   <div class="hero-content">
 
+    <!-- Podcast Circle -->
     <div class="podcast-circle">
-      <img src="assets/podcast-circle.png" alt="Podcast">
+      <img src="assets/podcast-circle.png" alt="Podcast Circle">
+
+      <!-- Inner microphone image -->
+      <img src="assets/microphone.png" alt="Podcast Icon" class="inner-img">
+
       <span class="badge">NEW</span>
     </div>
 
+    <!-- Hero Title -->
     <h1>TechWave</h1>
 
-    <div class="listen">
-      <img src="assets/spotify.png" alt="Spotify">
-      <span>Listen on Spotify</span>
+    <!-- Hero Description -->
+    <p class="listen">
+      Your daily dose of tech insights, productivity hacks, and personal growth
+    </p>
+
+    <!-- Buttons -->
+    <div class="hero-buttons">
+      <button class="spotify-btn">
+        <img src="assets/spotify.png" alt="Spotify"> Listen on Spotify
+      </button>
+      <button class="subscribe-btn"><img src="assets/message.png" alt="">Subscribe</button>
     </div>
 
-    <button class="subscribe-btn">Subscribe</button>
   </div>
 </section>
+
+
 
 <!-- ================= ABOUT ================= -->
 <section class="about">
-  <h2>About the Podcast</h2>
+  <h2 class="about-title">About the Podcast</h2>
+
+  <p class="about-desc">
+    TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+    We break down complex topics into digestible insights, explore productivity strategies that actually work,
+    and share stories of personal growth from industry leaders.<br><br>
+    Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+  </p>
 
   <div class="stats">
     <div class="stat">
-      <img src="assets/headphone.png">
-      <strong>150K+</strong>
-      <span>Listeners</span>
+      <p class="cl2">150K+</p>
+      <span>Monthly Listeners</span>
     </div>
     <div class="stat">
-      <img src="assets/microphone.png">
-      <strong>200+</strong>
-      <span>Episodes</span>
+      <p class="cl2">200+</p>
+      <span>Episodes Published</span>
     </div>
     <div class="stat">
-      <img src="assets/apple-podcast.png">
-      <strong>4.9★</strong>
-      <span>Rating</span>
+      <p class="cl2">4.9★</p>
+      <span>Average Rating</span>
     </div>
     <div class="stat">
-      <img src="assets/device.png">
-      <strong>50+</strong>
-      <span>Countries</span>
+      <p class="cl2">50+</p>
+      <span>Industry Experts</span>
     </div>
   </div>
 </section>
 
+
 <!-- ================= WHY CHOOSE ================= -->
 <section class="why">
-  <h2>Why Choose TechWave</h2>
+  <h2 class="tg1">Why Choose TechWave</h2>
 
   <div class="features">
-    <div class="feature"><img src="assets/headphone.png">Premium Audio Quality</div>
-    <div class="feature"><img src="assets/device.png">Mobile Friendly</div>
-    <div class="feature"><img src="assets/location.png">Global Community</div>
-    <div class="feature"><img src="assets/microphone.png">Exclusive Interviews</div>
-    <div class="feature"><img src="assets/resource.png">Rich Resources</div>
+    <div class="feature"><img src="assets/headphone.png"><h3>Premium Audio Quality </h3><span>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</span></div>
+    <div class="feature"><img src="assets/device.png"><h3>Mobile Friendly</h3><span>Listen on the go with seamless mobile experience and offline downloads.</span></div>
+    <div class="feature"><img src="assets/location.png"><h3>Global Community</h3><span>Connect with tech enthusiasts from over 120 countries worldwide.</span></div>
+    <div class="feature"><img src="assets/zap-fast.png" alt=""><h3>Exclusive Interviews</h3><span>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</span></div>
+    <div class="feature"><img src="assets/resource.png"><h3>Rich Resources</h3><span>Access show notes, transcripts, and additional learning materials for every episode.</span></div>
   </div>
 </section>
 
 <!-- ================= EPISODES ================= -->
 <section class="episodes">
-  <h2>Featured Episodes</h2>
+  <h2 class="episodes-title">Featured Episodes</h2>
 
   <div class="episode-cards">
+
     <div class="episode">
-      <h3>The Future of AI in Everyday Life</h3>
-      <div class="duration"><img src="assets/clock.png">42 min</div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/7ARBJQn6QkM"
+          title="Episode video"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h3 class="episode-title">
+NVIDIA CEO's Vision for the Future</h3>
+
+      <p class="episode-desc">
+     You're probably hearing a lot about AI, DeepSeek, NVIDIA and more right now. If you want the big picture (and to start from the beginning), watch this Huge Conversation with NVIDIA CEO Jensen Huang.
+      </p>
+
+      <div class="duration">
+        <span>⏱</span>
+        <span>63:03</span>
+      </div>
     </div>
 
     <div class="episode">
-      <h3>Building Better Habits for Remote Work</h3>
-      <div class="duration"><img src="assets/clock.png">35 min</div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/oX7OduG1YmI"
+          title="Episode video"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h3 class="episode-title">
+The Future Mark wants To Build</h3>
+
+      <p class="episode-desc">
+    Mark Zuckerberg and his team are imagining the future billions of people might live in, soon, and building towards it.
+      </p>
+
+      <div class="duration">
+        <span>⏱</span>
+        <span>47:09</span>
+      </div>
     </div>
 
     <div class="episode">
-      <h3>Career Growth in Tech: A Roadmap</h3>
-      <div class="duration"><img src="assets/clock.png">51 min</div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/1IxG7ywSNXk"
+          title="Episode video"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <h3 class="episode-title">Future of AI Agents</h3>
+
+      <p class="episode-desc">
+         In what's become a bit of a Decoder tradition, Nilay Patel spoke with Google CEO Sundar Pichai in person after I/O. The conference this year was all about AI, particularly a slew of actual AI products, not just models and capabilities.
+      </p>
+
+      <div class="duration">
+        <span>⏱</span>
+        <span>41:10</span>
+      </div>
     </div>
+
   </div>
 </section>
 
 <!-- ================= HOST ================= -->
 <section class="host">
-  <img src="assets/host.png" alt="Alex Kumar">
-  <div class="host-info">
-    <h2>Meet the Host</h2>
-    <h3>Alex Kumar</h3>
-    <p>
-      Alex Kumar is a technology strategist and podcast host sharing insights
-      on innovation, careers, and digital growth.
-    </p>
-  </div>
-</section>
+  <h2 class="host-title">Meet The Host</h2>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="socials">
+  <div class="host-card">
+    <img src="assets/host.png" alt="Alex Kumar" class="host-img">
+
+    <div class="host-info">
+      <h3 class="host-name">Alex Kumar</h3>
+      <p class="host-desc">
+        Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.
+      </p>
+      <div class="socials">
     <img src="assets/instagram.png">
     <img src="assets/linkedin.png">
     <img src="assets/x.png">
     <img src="assets/youtube.png">
   </div>
-  <p>© 2026 TechWave Podcast</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <h1 class="f2">Tech<span class="gradient-text">Wave</span></h1>
+ <div> 
+  <img src="assets/spotify.png" alt="">Spotify
+  <img src="assets/apple-podcast.png" alt="">Apple Podcast
+  <img src="assets/youtube-podcast.png" alt="">youtube
+  <img src="assets/twitter.png" alt="">Twitter
+</div>
+    
+  </div>
+  <p>© 2026 TechWave Podcast.All rights reserved.</p>
 </footer>
 
 </body>

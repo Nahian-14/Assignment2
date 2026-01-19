@@ -11,52 +11,108 @@ body {
 }
 
 /* NAVBAR */
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 60px;
+  background: rgba(26, 11, 46, 1);
+  color: #ffffff;
+  box-sizing: border-box;
+  position: relative;
 }
 
+/* Logo */
 .logo {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.gradient-text {
+  background: linear-gradient(90deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for non-webkit browsers */
+  color: transparent;
+  font-weight: 700;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex: 1; /* takes remaining space */
 }
 
 .nav-links a {
-  margin: 0 20px;
   text-decoration: none;
-  font-size: 14px;
-  color: #0A0A0A;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-.subscribe-btn {
+.nav-links a:hover {
+  color: #0bda68; /* subtle hover color */
+}
+
+/* Buttons */
+.btn-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.subscribe-btn-1 {
   padding: 10px 24px;
   border-radius: 999px;
   border: none;
   color: #fff;
   font-size: 14px;
-  background: linear-gradient(90deg,#FF6A00,#FF2D55);
+  background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Hamburger menu (mobile) */
+.hamburger {
+  display: none; /* hidden on desktop */
+  width: 24px;
   cursor: pointer;
 }
 
-.hamburger {
-  display: none;
-  width: 24px;
-}
-
 /* HERO */
+
 .hero {
   background: url("assets/banner-bg.png") center/cover no-repeat;
   padding: 120px 20px;
   text-align: center;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Podcast Circle */
 .podcast-circle {
   position: relative;
-  width: 130px;
-  margin: 0 auto 20px;
+  width: 350px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .podcast-circle img {
@@ -64,108 +120,329 @@ body {
   border-radius: 50%;
 }
 
+/* Inner microphone image */
+.podcast-circle .inner-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px; /* adjust size as needed */
+  height: 150px;
+  border-radius: 0%; /* optional */
+  object-fit: contain;
+}
+
+/* NEW Badge */
 .badge {
   position: absolute;
-  top: 10px;
-  right: -12px;
-  background: #E11D48;
-  font-size: 11px;
-  padding: 3px 8px;
-}
-
-.hero h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.listen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+  top: 15px;
+  right: -20px;
+  background: rgba(0, 255, 136, 1);
+  color: #000;
   font-size: 14px;
-  margin-bottom: 30px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  box-shadow: 0px 3px 27px rgba(0, 255, 136, 0.5);
 }
 
+/* Hero Title */
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+/* Hero Description */
+.listen {
+  font-size: 18px;
+  max-width: 700px;
+  margin-bottom: 40px;
+  color: #E5E7EB;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Spotify button */
+.spotify-btn {
+  width: 201px;
+  height: 44px;
+  background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+  color: #fff;
+  justify-content: center;
+}
+
+/* Subscribe button */
+.subscribe-btn {
+  background: rgba(26, 11, 46, 1);
+  color: #19db6d;
+  border: #0bda68;
+}
+
+/* Hover effect */
+.hero-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 /* ABOUT */
+
 .about {
   padding: 80px 60px;
   text-align: center;
+  background: rgba(26, 11, 46, 1);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
-.about h2 {
-  font-size: 24px;
-  margin-bottom: 50px;
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
+.about-desc {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #E5E7EB;
+}
+
+/* Stats grid */
 .stats {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.stat img {
-  width: 24px;
-  margin-bottom: 10px;
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
-.stat strong {
-  font-size: 22px;
+/* Stat numbers */
+.cl2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #0bda68;
+}
+
+/* Stat description */
+.stat span {
+  font-size: 16px;
+  color: #E5E7EB;
+  text-align: center;
 }
 
 /* WHY */
 .why {
   padding: 80px 60px;
   text-align: center;
+  font-size: 200%;
+  color: #ffffff;
+  background: rgba(35, 14, 61, 1);
 }
 
 .features {
   display: grid;
   grid-template-columns: repeat(5,1fr);
   gap: 20px;
+  border-radius: 40px;
+
 }
 
 .feature {
-  background: #F5F5F5;
+  background: rgba(53, 17, 101, 0.4);
   padding: 30px 10px;
   font-size: 14px;
+  gap: 40px;
+  
 }
 
+.tg1{
+
+}
 /* EPISODES */
+
 .episodes {
-  padding: 80px 60px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 120px 200px;
+  background: rgba(26, 11, 46, 1);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
 }
 
+.episodes-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Cards layout */
 .episode-cards {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
 }
 
+/* Individual card */
 .episode {
-  background: #F9F9F9;
+ 
   padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgb(30, 17, 47);
 }
 
+/* Hover animation */
+.episode:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive video */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Episode title */
+.episode-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Episode brief */
+.episode-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #b9c0ca;
+}
+
+/* Duration */
 .duration {
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  color: #6B7280;
+  color: #18d46a;
+  margin-top: auto;
 }
 
 /* HOST */
 .host {
-  padding: 80px 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px;
   display: flex;
-  gap: 50px;
-  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  text-align: center;
+  background: rgba(26, 11, 46, 1);
 }
 
-.host img {
-  width: 230px;
-  border-radius: 50%;
+.host-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
 }
+
+/* Host Card */
+.host-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: rgba(53, 17, 101, 0.4);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+/* Host Image */
+.host-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Host Info */
+.host-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.host-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.host-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Hover effect */
+.host-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 /* FOOTER */
 .footer {
@@ -174,7 +451,9 @@ body {
   text-align: center;
   color: #fff;
 }
-
+.f2{
+  font-size: 250%;
+}
 .socials img {
   width: 20px;
   margin: 0 8px;

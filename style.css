@@ -548,3 +548,142 @@ gap: 20px;
     text-align: center;
   }
 }
+
+@media (max-width: 576px) {
+
+  /* -------- NAVBAR -------- */
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .nav-links,
+  .subscribe-btn-1 {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* -------- HERO -------- */
+  .hero {
+    padding: 80px 16px;
+  }
+
+  .podcast-circle {
+    width: 260px;
+  }
+
+  .podcast-circle .inner-img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .listen {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* -------- ABOUT -------- */
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-desc {
+    font-size: 15px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .cl2 {
+    font-size: 32px;
+  }
+
+  /* -------- WHY -------- */
+  .why {
+    padding: 60px 20px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    padding: 24px;
+  }
+
+  .l1 {
+    font-size: 18px;
+  }
+
+  .l2 {
+    font-size: 14px;
+  }
+
+  /* -------- EPISODES -------- */
+  .episodes {
+    padding: 60px 20px;
+  }
+
+  .episodes-title {
+    font-size: 28px;
+  }
+
+  .episode-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* -------- HOST -------- */
+  .host {
+    padding: 60px 20px;
+  }
+
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .host-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .host-info {
+    text-align: center;
+  }
+
+  /* -------- FOOTER -------- */
+  .f2 {
+    font-size: 36px;
+  }
+
+  .f3 {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

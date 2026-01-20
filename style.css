@@ -25,7 +25,7 @@ body {
 
 /* Logo */
 .logo {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -33,7 +33,7 @@ body {
   background: linear-gradient(90deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* for non-webkit browsers */
+  background-clip: text; 
   color: transparent;
   font-weight: 700;
 }
@@ -43,7 +43,7 @@ body {
   display: flex;
   gap: 30px;
   justify-content: center;
-  flex: 1; /* takes remaining space */
+  flex: 1; 
 }
 
 .nav-links a {
@@ -55,7 +55,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #0bda68; /* subtle hover color */
+  color: #0bda68; 
 }
 
 /* Buttons */
@@ -78,11 +78,19 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
+
+.subscribe-btn-1:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(145, 0, 248, 0.4);
+  filter: brightness(1.1);
+}
+
 
 /* Hamburger menu (mobile) */
 .hamburger {
-  display: none; /* hidden on desktop */
+  display: none;
   width: 24px;
   cursor: pointer;
 }
@@ -120,15 +128,15 @@ body {
   border-radius: 50%;
 }
 
-/* Inner microphone image */
+
 .podcast-circle .inner-img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150px; /* adjust size as needed */
+  width: 150px; 
   height: 150px;
-  border-radius: 0%; /* optional */
+  border-radius: 0%; 
   object-fit: contain;
 }
 
@@ -136,7 +144,7 @@ body {
 .badge {
   position: absolute;
   top: 15px;
-  right: -20px;
+  right: 25px;
   background: rgba(0, 255, 136, 1);
   color: #000;
   font-size: 14px;
@@ -144,6 +152,12 @@ body {
   padding: 6px 14px;
   border-radius: 50px;
   box-shadow: 0px 3px 27px rgba(0, 255, 136, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge:hover {
+  transform: scale(1.1) rotate(-3deg);
+  box-shadow: 0px 6px 35px rgba(0, 255, 136, 0.8);
 }
 
 /* Hero Title */
@@ -196,6 +210,8 @@ body {
   background: rgba(26, 11, 46, 1);
   color: #19db6d;
   border: #0bda68;
+
+  
 }
 
 /* Hover effect */
@@ -269,27 +285,63 @@ body {
   font-size: 200%;
   color: #ffffff;
   background: rgba(35, 14, 61, 1);
+  
 }
 
 .features {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  gap: 20px;
-  border-radius: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(140px, auto);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
 
+}
+
+
+
+.i1 {
+  grid-row: span 2;
+}
+
+/* Bottom wide cards */
+.i3
+ {
+  grid-column: span 2;
+}
+
+.i2
+ {
+  grid-column: span 2;
+}
+
+.i4
+ {
+  grid-column: span 2;
+}
+
+.i5 {
+  grid-column: span 1;
 }
 
 .feature {
-  background: rgba(53, 17, 101, 0.4);
-  padding: 30px 10px;
-  font-size: 14px;
-  gap: 40px;
+   background: rgba(53, 17, 101, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
   
 }
 
-.tg1{
-
+.l1{
+  font-size: 65%;
 }
+.l2{
+  font-size: 45%;
+  color: #cacaca;
+  gap: 2px;
+}
+
 /* EPISODES */
 
 .episodes {
@@ -381,14 +433,18 @@ body {
 /* HOST */
 .host {
   width: 100%;
+  background: rgba(26, 11, 46, 1);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.host-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 40px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   gap: 60px;
-  text-align: center;
-  background: rgba(26, 11, 46, 1);
 }
 
 .host-title {
@@ -452,7 +508,15 @@ body {
   color: #fff;
 }
 .f2{
-  font-size: 250%;
+  font-size: 300%;
+}
+
+.f3{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
 }
 .socials img {
   width: 20px;
